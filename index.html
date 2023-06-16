@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <div class="container login-register d-flex justify-content-center align-items-center flex-column" id="container-login">
+        <h3>Log in</h3>    
+        <form id="form-login" class="col-md-4 border p-4 rounded bg-light d-flex justify-content-center flex-column" action="" method="post">
+            <div class="input-control w-100">
+                <label for="email" class="form-label">E-mail</label>
+                <label class="d-flex input-group w-100" id="label-email-login">
+                    <span class="input-group-text">
+                    <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" name="email" id="email-login" placeholder="Enter valid e-mail">
+                </label>
+                <div class="error"></div>
+            </div>
+            
+            <div class="input-control w-100">
+                <label for="password" class="form-label">Password</label>
+                <label class="input-group w-100" id="label-password-login">
+                    <span class="input-group-text">
+                    <i class="fa-solid fa-lock"></i>
+                    </span>
+                    <input type="password" class="form-control register-password show-password" name="password" id="password-login" placeholder="Password">
+                </label>
+                <div class="error"></div>
+            </div>
+
+            <label class="position-relative" style="cursor: pointer">
+                <input type="checkbox" name="" id="">
+                mostrar palavra passe
+            </label>
+            
+            <button type="submit" class="btn btn-primary mt-3" name="login">log in</button>
+        </form>
+        
+        <div class="mt-3">
+            Don't have an account yet? <a href="subpage/register.html">Register now</a>
+        </div>
+    </div>
+    <script src="assets/js/login-register-validation.js"></script>
+    <script src="assets/js/show-password.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

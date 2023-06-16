@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/fonts/css/all.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/jquery-2.2.4.min.js"></script>
+    <title>Register</title>
+</head>
+<body>
+
+    <div class="container login-register d-flex justify-content-center align-items-center flex-column" id="container-cadastro">
+        <h3 class="text-center mb-4">Register</h3>
+        <form class="border col-md-4 form-login-cadastre p-4 rounded bg-light d-flex justify-content-center flex-column" id="form-register" action="" method="post">
+            <div class="input-control w-100">
+                <label for="username" class="form-label">Username</label>
+                <label class="input-group" id="label-username-register">
+                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" maxlength="50" id="username-register" name="name" placeholder="Enter username" >
+                </label>
+                <div class="error"></div>
+            </div>
+            <div class="input-control w-100">
+                <label for="email" class="form-label">Email</label>
+                <label class="input-group" id="label-email-register">
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" class="form-control" id="email-register" name="email" placeholder="Enter e-mail">
+                </label>
+                <div class="error"></div>
+            </div>
+            <div class="input-control w-100">
+                <label for="password" class="form-label">Password</label>
+                <label class="input-group" id="label-password-register">
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control register-password show-password" id="password-register" name="password" placeholder="Create password">
+                </label>
+                <div class="error"></div>
+            </div>
+            <div class="input-control w-100">
+                <label for="password2" class="form-label">Confirm Password</label>
+                <label class="input-group" id="label-password2-register">
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control register-password show-password" id="password2-register" name="password_confirmation" placeholder="Confirm password">
+                </label>
+                <div class="error"></div>
+            </div>
+            <label class="position-relative" style="cursor: pointer">
+                <input type="checkbox" name="" id="check-register-show-password">
+                mostrar palavra passe
+            </label>
+            <button type="submit" class="btn btn-primary mt-3" name="submit">register</button>
+
+        </form>
+        <div class="mt-4 text-center">
+            Already have an account? <a href="../index.html">Log in</a>
+        </div>
+    </div>
+    <script src="../assets/js/login-register-validation.js"></script>
+    <script src="../assets/js/show-password.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
